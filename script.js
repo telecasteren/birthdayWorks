@@ -1,8 +1,10 @@
+import { birthdayText } from "/textElement.js";
+
 function displayFireworks() {
   const buttonDiv = document.querySelector(".buttonContainer");
   const fireworks = document.querySelector(".pyro");
 
-  buttonElement = document.createElement("button");
+  const buttonElement = document.createElement("button");
   buttonElement.className = "fireworksBtn";
   buttonElement.innerText = "Happy birthday!🎉";
 
@@ -12,13 +14,7 @@ function displayFireworks() {
 
   const textElement = document.createElement("h1");
   textElement.id = "textElement";
-  textElement.innerText = `
-  Kjære Gard,
-  Du er en kunstnerisk sjel med et blikk for detaljer - for det vakre og det såre, det fine og det vonde.
-  Vi håper du vil fortsette å fange øyeblikkene som kommer, og vise verden slik du ser den.
-  Glad i deg,
-  hilsen Oda, Emilie og Tele
-  `;
+  textElement.innerText = birthdayText;
   cardElement.appendChild(textElement);
 
   buttonElement.addEventListener("click", () => {
